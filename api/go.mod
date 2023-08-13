@@ -9,7 +9,6 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/labstack/echo/v4 v4.11.1
 	github.com/lib/pq v1.10.9
-	github.com/lucas-simao/ddd-go v0.0.0-20220819010057-a2868a782f88
 	github.com/ory/dockertest v3.3.5+incompatible
 	github.com/stretchr/testify v1.8.4
 )
