@@ -1,0 +1,15 @@
+.formUser {
+  display: grid;
+  gap: 20px;
+
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+
+  button {
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+  }
+}

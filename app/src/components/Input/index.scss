@@ -1,0 +1,17 @@
+.input {
+  display: grid;
+  gap: 4px;
+
+  label {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  input {
+    border-radius: 8px;
+    height: 40px;
+    border: 1px solid #aeaeae;
+    padding: 0 10px;
+  }
+
+}

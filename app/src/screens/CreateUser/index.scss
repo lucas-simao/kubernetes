@@ -1,0 +1,8 @@
+.createUser {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 78px);
+  width: 100vw;
+  place-content: center;
+  align-items: center;
+}
