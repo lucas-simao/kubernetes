@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+
+  db:
+    image: postgres:13
+    container_name: postgres_kube-api
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - data_api:/var/lib/postgresql/data
+
+volumes:
+  data_api:
+    driver: local

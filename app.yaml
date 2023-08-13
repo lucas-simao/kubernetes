@@ -1,0 +1,37 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: my-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: my-app-deployment
+  template:
+    metadata:
+      labels:
+        app: my-app-deployment
+    spec:
+      containers:
+      - name: my-app-deployment
+        image: lucassimao/my-app:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-app-service
+spec:
+  selector:
+    app: my-app-deployment
+  type: LoadBalancer
+  ports:
+  - name: http-app
+    protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30000
